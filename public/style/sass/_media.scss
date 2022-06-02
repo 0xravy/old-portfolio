@@ -1,0 +1,166 @@
+
+@media all and (max-width: 1250px) 
+{
+    .contact
+    {
+        .content
+        {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+@media all and (max-width: 1100px) 
+{
+    html 
+    {
+        font-size: 12px;
+    }
+    .home .type .text
+    {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+
+    @media all and (max-width: 800px)
+    {
+        
+        html 
+        {
+            font-size: 15px;
+        }
+        section 
+        {
+            padding: 0 0;
+        }
+        .theme 
+        {
+            top: 50%;
+            left: 50%;
+        }
+        .header 
+        {
+            padding: 0;
+        }
+        .nav-logo 
+        {
+            font-size: 1rem;
+        }
+        .nav-menu 
+        {
+            display: none;
+        }
+        .nav-list 
+        {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.618);
+            backdrop-filter: blur(2.1px);
+            padding: 5px 0;
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: column;
+            
+    
+            .exit 
+            {
+                display: block;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 3rem;
+            }
+        }
+        #nav-toggle, #theme-btn 
+        {
+            display: block !important;
+            font-size: 3rem !important;
+        }
+    
+        .home 
+        {
+            flex-direction: column;
+        }
+        .about 
+        {
+    
+            .content 
+            {
+                flex-direction: column-reverse;
+                align-items: center;
+                
+                div 
+                {
+                    padding: 15px;
+                }
+            }
+        }
+
+
+
+
+        @media all and (max-width: 520px)
+        {
+            .home .type .text
+            {
+                width: 100%;
+                font-size: 1rem;
+            }
+
+            .contact 
+            {
+                padding: 100px 0 0 0;
+                margin: 50px auto 0;
+
+                .content
+                {
+                    padding-top: 100px;
+                    overflow-x: hidden;
+                    flex-direction: column-reverse;
+                    width: 100%;
+                    // padding: 60px;
+                    
+                    .box
+                    {
+                        width: 100%;
+                        // padding: 0 10px;
+        
+                    }
+                }
+            }
+            
+            .header .navbar .nav-btns
+            {
+                font-size: 2rem;
+            }
+
+            .box
+            {
+                flex-direction: column;
+            }
+
+            @media all and (max-width: 380px)
+            {
+                html
+                {
+                    font-size: 12px;
+                }
+                .nav-logo 
+                {
+                    font-size: .5rem;
+                    color: #fff;
+                }
+                .header .navbar .nav-btns
+                {
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}

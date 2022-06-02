@@ -1,0 +1,79 @@
+@keyframes animate{
+    40%, 60%{
+        left: calc(100% + 4px);
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
+@keyframes NavLinks {
+    0% {
+        left: 50%;
+        width: 1rem;
+        border-radius: 50%; 
+    }
+    60% {
+        width: .5rem;
+        right: 0;
+    }
+    80% {
+
+    }
+
+    100% {
+        right: 0;
+        width: 100%;
+        border-radius: 10px; 
+    }
+}
+
+@keyframes slider {
+    from {
+        transform: perspective(2000px) rotateY(360deg);
+    } to {
+        transform: perspective(2000px) rotateY(0deg);
+    }
+}
+
+@keyframes btn {
+    0%, 30%, 60%, 100% {
+        background-color: #00fffbb3;
+    } 20%, 40%, 50% {
+        background-color: #006866b3;
+    }
+}
+
+@keyframes shadow {
+    0%, 100% {
+        box-shadow: 0px 0px 20px 0px #00ff99;
+    } 50% {
+        box-shadow: 0px 0px 5px 0px #00ff993f;
+
+    }
+}
+
+
+@keyframes logo {
+    0%, 100% {
+        transform: rotate(0deg);
+    } 50% {
+        transform: rotate(620deg);
+    }
+}
+
+@keyframes discord {
+    from { 	transform: rotate(0deg) translateX(150px); }
+	to   {  transform: rotate(360deg) translateX(150px); }
+}
+
+@keyframes github {
+    from { 	transform: rotate(0deg) translateX(220px); }
+	to   {  transform: rotate(360deg) translateX(220px); }
+}
+
+@keyframes youtube {
+    from { 	transform: rotate(0deg) translateX(80px); }
+	to   {  transform: rotate(360deg) translateX(80px); }
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARAVAN 𓅃</title>
+    <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- icon -->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <script defer src="https://kit.fontawesome.com/476dbf46dd.js" crossorigin="anonymous"></script>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- import Javascript -->
+        <script defer type="text/javascript" src="public/script/import/vanilla-tilt.js"></script>
+
+
+    <!-- project CSS file -->
+        <link rel="stylesheet" href="public/style/index.css">
+
+
+    <!-- project JavaScript file -->
+        <script defer src="public/script/index.js"></script>
+
+
+
+
+    <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- Link Swiper's JS -->
+        <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    
+        <script defer >
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                slidesPerGroup: 3,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                },
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+                },
+            });
+        </script>
+        <script defer src="public/script/script.js"></script>
+
+</head>
+<body>
+<!-- 
+    1.[+] home
+    2.[+] about
+    3.[+] skills
+    4.[-] projects
+    5.[/] services 
+    6.[-] contact
+-->
+
+    <div class="theme" id="controleTheme">
+        <button id="themeExite">
+            X
+        </button>
+
+        <h1>
+            Edite page
+        </h1>
+
+        <div>
+            <input type="color" oninput="backgroundColor(this.value)" />
+            <p>[ Background color ]</p>
+        </div>
+        <div>
+            <input type="color" oninput="textColor(this.value)" />
+            <p>[ Color ]</p>
+        </div>
+        <div>
+            <input type="number" oninput="textSize(this.value)" value="10" />
+            <p>[ Font size ]</p>
+        </div>
+        
+    </div>
+
+
+    
+    <header class="header">
+        <!-- nav -->
+        <nav class="navbar">
+            <!-- nav logo -->
+            <a href="#home" class="nav-logo">
+                <h2>aravan</h2>
+            </a>
+            <!-- nav menu -->
+            <div class="nav-menu">
+                <!-- nav list -->
+                <ul class="nav-list">
+                    <div class="exit" id="nav-exit">
+                        <i class='bx bx-exit'></i>
+                    </div>
+
+                    <li>
+                        <a href="#home" class="nav-link active-link">
+                            <!-- <i class='bx bxs-home'></i> -->
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav-link">
+                            <!-- <i class='bx bxs-user'></i> -->
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link">
+                            <!-- <i class='bx bxs-extension'></i> -->
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#project" class="nav-link">
+                            <!-- <i class='bx bxs-carousel'></i> -->
+                            Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">
+                            <!-- <i class='bx bxs-envelope-open'></i> -->
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- nav btns -->
+            <div class="nav-btns">
+                <!-- theme change btn -->
+                <i class='bx bx-palette' id="themeBtn"></i>
+                <!-- nav toggle btn -->
+                <div class="nav-toggle" id="navToggle">
+                    <i class='bx bx-menu-alt-right'></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="card" id="aravanCard">
+            <div class="img">
+                <img src="public/image/aravan.gif" alt="">
+            </div>
+            <div class="content">
+                <h1>
+                    aravan
+                </h1>
+                <div>
+                    <span>17 years old</span><br>
+                    <span>form saudi arabia</span>
+                </div>
+            </div>
+        </div>
+        <div class="type">
+            <span class="text first-text">I'm </span>
+            <span class="text sec-text"></span>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h1 class="title">
+            About
+        </h1>
+        
+        <div class="content">
+            <div>
+                <p>
+                    Hi im aravan im 17 years old from saudi arabia <br />
+                    Im full stack developer and ihave 2 years of programming.
+
+
+                </p>
+            </div>
+            <img src="public/image/aravan_a.png" alt="">
+        </div>
+    </section>
+    
+    <section class="skills" id="skills">
+        <h1 class="title">
+            Skills
+        </h1>
+
+        <div class="content">
+            <div class="slider">
+                <span style="--i:1;">
+                    <h1> Web Front End</h1>
+                    <img src="https://cdn-icons-png.flaticon.com/512/922/922699.png">
+                </span>
+                
+                <span style="--i:2;">
+                    <h1>Web Back End</h1>
+                    <img src="https://cdn-icons-png.flaticon.com/512/6213/6213731.png">
+                </span>
+
+                <span style="--i:3;">
+                    <h1>Bot CMD</h1>
+                    <img src="https://img.icons8.com/color/344/bot.png">
+                </span>
+
+                <span style="--i:4;">
+                    <h1>App</h1>
+                    <img src="https://img.icons8.com/external-others-inmotus-design/344/external-app-passions-others-inmotus-design.png">
+                </span>
+
+                <span style="--i:5;">
+                    <h1>Cyber Security</h1>
+                    <img src="https://img.icons8.com/color/344/cyber-security.png">
+                </span>
+
+                <!-- <span style="--i:6;">
+                    <h1>Test</h1>
+                    <img src="public/image/aravan.png">
+                </span>
+
+                <span style="--i:7;">
+                    <h1>Test</h1>
+                    <img src="public/image/aravan.png">
+                </span>
+
+                <span style="--i:8;">
+                    <h1>Test</h1>
+                    <img src="public/image/aravan.png">
+                </span> -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="project" id="project">
+        <h1 class="title">
+            my Projects
+        </h1>
+        <div class="content">
+
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+    
+                        <div class="card swiper-slide">
+                            <div class="card-img">
+                                <img src="https://c.tenor.com/Mtt_u2FtYBkAAAAC/coffee-code.gif" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h2>
+                                    JAVA
+                                </h2>
+                                <p>
+                                    java for fools
+                                </p>
+                            </div>
+                            <button>
+                                view
+                            </button>
+                        </div>
+    
+                        <div class="card swiper-slide">
+                            <div class="card-img">
+                                <img src="https://i.pinimg.com/originals/64/4e/17/644e176e436d100ae1fdedb333f0afb4.gif" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h2>
+                                    C/C++
+                                </h2>
+                                <p>
+                                    im fast boy >_>
+                                </p>
+                            </div>
+                            <button>
+                                view
+                            </button>
+                        </div>
+    
+
+                        <div class="card swiper-slide">
+                            <div class="card-img">
+                                <img src="https://c.tenor.com/OlkCUrnKZiwAAAAC/anonymous-glitching.gif" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h2>
+                                    Anonymous
+                                </h2>
+                                <p>
+                                    CMD is hack app :>
+                                </p>
+                            </div>
+                            <button>
+                                view
+                            </button>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="card-img">
+                                <img src="https://media2.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif?cid=790b7611fc0b7096363e9a8a8cdc7145d7f5276e5f4b4c42&rid=giphy.gif&ct=g" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h2>
+                                    Developer
+                                </h2>
+                                <p>
+                                    oha we are front end we see the world from a different perspective
+                                </p>
+                            </div>
+                            <button>
+                                view
+                            </button>
+                        </div>
+
+
+                        <div class="card swiper-slide">
+                            <div class="card-img">
+                                <img src="https://camo.githubusercontent.com/4438673be1de4b35bf284246ea8c53358e26bd046f00686ac18d069366ff45cc/687474703a2f2f692e696d6775722e636f6d2f5a72627459484b2e676966" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h2>
+                                    Typescript
+                                </h2>
+                                <p>
+                                    تايب سكربت عمك انت وهوا
+                                </p>
+                            </div>
+                            <button>
+                                view
+                            </button>
+                        </div>
+    
+
+                        <div class="card swiper-slide">
+                            <div class="card-img">
+                                <img src="https://c.tenor.com/bdxBAmIzeUEAAAAC/oyunlog-ascii.gif" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h2>
+                                    0 DAY
+                                </h2>
+                                <p>
+                                    لقد دقت ساعت الصفر -_-
+                                </p>
+                            </div>
+                            <button>
+                                view
+                            </button>
+                        </div>
+    
+
+                        <div class="card swiper-slide">
+                            <div class="card-img">
+                                <img src="https://webkit.org/wp-content/uploads/wasm-signal.gif" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h2>
+                                    Webassembly
+                                </h2>
+                                <p>
+                                    العصر الجديد الذي سوف يبديد البشريه
+                                </p>
+                            </div>
+                            <button>
+                                view
+                            </button>
+                        </div>
+    
+    
+    
+    
+                    </div>
+                </div>
+    
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            
+        </div>
+    </section>
+ 
+    <section class="contact" id="contact">
+        <h1 class="title">
+            Contact
+        </h1>
+
+        <div class="content">
+            <form class="box">
+                <div class="box-content">
+                    <div>
+                        <input type="text" id="email" required >
+                        <label for="email">email</label>
+                    </div>
+                    <div>
+                        <input type="text" id="name" required >
+                        <label for="name">name</label>
+                    </div>
+                </div>
+                <div>
+                    <textarea id="message" required></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit">send</button>
+            </form>
+
+
+            <div class="social">
+
+
+                <div class="youtube" style="animation: github 9s linear infinite;">
+                    <a target="_blank" href="https://github.com/aravns">
+                        <p class='github fa-brands fa-github-alt' ></p></a>
+                </div>
+
+                    <div class="discord" style="animation: discord 7s linear infinite;">
+                        <a target="_blank" href="https://discord.gg/jEJWzn2dXv">
+                            <p class='discord fa-brands fa-discord'></p></a>
+                </div>
+
+                <div class="linkin" style="animation: youtube 5s linear infinite;">
+                    <a target="_blank" href="https://www.youtube.com/channel/UCRYDSKNGfj5ZA9d-nVjYeDQ">
+                        <p class='youtube fa-brands fa-youtube' ></p></a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
