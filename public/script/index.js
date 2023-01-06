@@ -127,6 +127,7 @@ const form = document.getElementById("form");
 
 
 // const email = document.getElementById("email");
+
 const name = document.getElementById("name");
 const message = document.getElementById("message")
 
@@ -150,27 +151,28 @@ ${message.value}
     // },
 };
 
-function discord_message(webHookURL, message) {
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", webHookURL, true);
-  xhr.setRequestHeader('Content-Type', 'application/json');
-  xhr.send(JSON.stringify({
-      'content': message,
-      'username': "Emails",
-      'embeds': [exampleEmbed]
-  }));
-}
 
+function discord_message(webHookURL, message) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", webHookURL, true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+        'content': message,
+        'username': "Emails",
+        'embeds': [exampleEmbed]
+    }));
+  }
+  
+  
 
 submit.addEventListener("click", async () => {
     // if (name.value !== "" || message.value !== "") {
-        
+        discord_message(webHookURL, "")
+        alert("message is send")
+        document.location.reload()
+        // name.value = ""
+        // message.value = ""
     // }
-    discord_message(webHookURL, "")
-    alert("message is send")
-    document.location.reload()
-    name.value = ""
-    message.value = ""
     // console.log(email.value);
     // console.log(name.value);
     // console.log(message.value);
