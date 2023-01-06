@@ -5,7 +5,7 @@
     list-style: none;
     text-decoration: none;
     font-weight: 500;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Lustria', serif;
     font-weight: 500;
 }
 
@@ -13,7 +13,7 @@ a {
     color: var(--textColor);
 }
 html {
-    font-size: 15px;
+    font-size: max(1vw,1em);
     scroll-behavior: smooth;
 }
 
@@ -28,27 +28,26 @@ body {
 
 .theme {
     position: fixed;
-    padding: 20px;
-    width: min(300px, 500px);
-    height: 250px;
+    padding: max(1.5vw,1.5em);
+    width: max(17vw, 17em);
+    height: max(20vw,20em);
     top: 40%;
     left: 80%;
     transform: translate(-50%, -50%);
-    background-color: rgb(19, 18, 18);
-    border-radius: 10px;
+    background-color: #323844;
+    border-radius: max(1vw,1em);
     display: none;
     align-items: flex-start;
     flex-direction: column;
     z-index: 200;
-    border: 1px solid #8080807b;
 
     button {
         position: absolute;
         background: none;
         border: none;
-        right: 20px;
-        top: 10px;
-        font-size: 2rem;
+        top: max(.5vw,.5em);
+        right: max(1vw,1em);
+        font-size: max(2vw,2em);
         font-weight: 1000;
         color: red;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -59,20 +58,23 @@ body {
     }
 
     div {
-        margin-left: 10px;
-        margin-top: 20px;
+        margin-left: max(1vw,1em);
+        margin-top: max(1vw,1em);
         display: flex;
 
         p {
-            margin-top: 5px;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: max(.5vw,.5em);
+            font-family: 'Inconsolata', monospace;
+            font-size: max(.7vw,.7em);
         }
         input {
-            width: 50px;
+            width: max(2.5vw,2.5em);
+            height: max(2vw,2em);
             text-align: center;
-            margin-right: 10px;
-            background: rgb(12, 11, 11);
+            margin-right: max(.3vw,.3em);
+            background: #22242c;
             color: #fff;
+            font-size: max(.7vw,.7em);
         }
     }
 }
