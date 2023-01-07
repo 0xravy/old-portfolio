@@ -128,50 +128,49 @@ const form = document.getElementById("form");
 
 // const email = document.getElementById("email");
 
-const name = document.getElementById("name");
-const message = document.getElementById("message")
 
 
-const exampleEmbed = {
-    color: 0x0099ff,
-    url: 'https://discord.js.org',
-    description: `
-~> Name: ${name.value}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~> Message:
-${message.value}
-  `,
-    thumbnail: {
-        url: 'https://pngimg.com/uploads/email/email_PNG11.png',
-    },
-    timestamp: new Date().toISOString(),
-    // footer: {
-    // 	text: 'Some footer text here',
-    // 	icon_url: 'https://i.imgur.com/AfFp7pu.png',
-    // },
-};
 
 
-function discord_message(webHookURL, message) {
-    var xhr = new XMLHttpRequest();
-    xhr.open("POST", webHookURL, true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.send(JSON.stringify({
-        'content': message,
-        'username': "Emails",
-        'embeds': [exampleEmbed]
-    }));
-  }
+
   
-  
+  submit.addEventListener("click", async () => {
 
-submit.addEventListener("click", async () => {
-    // if (name.value !== "" || message.value !== "") {
-        discord_message(webHookURL, "")
-        alert("message is send")
-        document.location.reload()
-        // name.value = ""
-        // message.value = ""
+    const name = document.getElementById("name").value;
+    const message = document.getElementById("message").value;
+    
+    const exampleEmbed = {
+        color: 0x0099ff,
+        description: `
+    ~> Name: ${name}
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~> Message:
+    ${message}
+      `,
+        thumbnail: {
+            url: 'https://pngimg.com/uploads/email/email_PNG11.png',
+        },
+        timestamp: new Date().toISOString(),
+        // footer: {
+        // 	text: 'Some footer text here',
+        // 	icon_url: 'https://i.imgur.com/AfFp7pu.png',
+        // },
+    };
+      // if (name.value !== "" || message.value !== "") {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", webHookURL, true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.send(JSON.stringify({
+            'content': "🙦━━━━{ 📪 New Emails🎈'v' }━━━━🙤",
+            'username': "Emails",
+            'embeds': [exampleEmbed]
+        }));
+        setTimeout(()=> {
+            // alert("message is send")
+            document.location.reload();
+            name.value = ""
+            message.value = ""
+        }, 500);
     // }
     // console.log(email.value);
     // console.log(name.value);
