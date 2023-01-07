@@ -1,4 +1,4 @@
- 
+// Dont tuch this file ._. 
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
     spaceBetween: 25,
