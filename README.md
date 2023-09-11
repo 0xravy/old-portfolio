@@ -1,2 +1,2 @@
 # Portfolio
-https://aravns.github.io/portfolio/
+https://aravns.github.io/old-portfolio/
